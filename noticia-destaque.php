@@ -1,4 +1,5 @@
-<?php if(have_posts()){ the_post(); ?>                    
+<?php $destaque = get_posts('category_name=destaque&posts_per_page=1'); ?>
+<?php foreach($destaque as $post) :  setup_postdata($post); ?>
     
     <h5 class="topico stand">Destaque</h5>
     
@@ -15,13 +16,4 @@
         </div><!-- .dados -->
 		
         <?php the_content(); ?>
-    
-<?php }else{ ?>
-
-	<?php 
-	$notfound_msg = get_option('nt_text_not_found'); 
-	if(empty($notfound_msg)): $notfound_msg = "Sorry, no records were found."; endif;							
-	?>
-	<p class="mensage"><?php echo $notfound_msg; ?></p>
-    
-<?php } ?>
+<?php endforeach; ?>   

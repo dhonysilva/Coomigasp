@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		
+<brasil>
+			
+			<cidade  id="1">
+			<cbrasilia>BRASÍLIA</cbrasilia>
+			<linkbrasilia>http://www.revistamaisdopara.com/dhony/coomigasp/</linkbrasilia>
+			</cidade>
+			
+			
+			<cidade  id="2">
+			<cpalmas>PALMAS</cpalmas>
+			<linkpalmas>http://www.joaoandrade.com.br/</linkpalmas>
+			</cidade>
+			
+			<cidade  id="3">
+			<cpresidente>PRESIDENTE DUTRA</cpresidente>
+			<linkpresidente>http://www.joaoandrade.com.br/?p=488</linkpresidente>
+			</cidade>
+			
+			<cidade  id="4">
+			<caraguaina>ARAGUAÍNA</caraguaina>
+			<linkaraguaina>http://www.joaoandrade.com.br/?p=477</linkaraguaina>
+			</cidade>
+			
+			
+			<cidade  id="5">
+			<cimperatriz>IMPERATRIZ</cimperatriz>
+			<linkimperatriz>http://www.joaoandrade.com.br/?p=477</linkimperatriz>
+			</cidade>
+			
+
+			<cidade  id="6">
+			<csaoluis>SÃO LUIS</csaoluis>
+			<linksaoluis>http://www.joaoandrade.com.br/?p=471</linksaoluis>
+			</cidade>
+			
+			<cidade  id="7">
+			<csaod>SÃO D. DO ARAGUAIA</csaod>
+			<linksaod>http://www.joaoandrade.com.br/?p=471</linksaod>
+			</cidade>
+			
+			<cidade  id="8">
+			<csantaines>SANTA INÊS</csantaines>
+			<linksantaines>http://www.joaoandrade.com.br/?p=471</linksantaines>
+			</cidade>
+			
+			
+			<cidade  id="9">
+			<cteresina>TERESINA</cteresina>
+			<linkteresina>http://www.joaoandrade.com.br/?p=471</linkteresina>
+			</cidade>
+			
+			<cidade  id="10">
+			<cnovorep>TEREZINA</cnovorep>
+			<linknovorep>http://www.joaoandrade.com.br/?p=471</linknovorep>
+			</cidade>
+			
+			
+			<cidade  id="11">
+			<cxinguara>XINGUARA</cxinguara>
+			<linkxinguara>http://www.joaoandrade.com.br/?p=471</linkxinguara>
+			</cidade>
+			
+			<cidade  id="12">
+			<cbelem>BELÉM</cbelem>
+			<linkbelem>http://www.joaoandrade.com.br/?p=471</linkbelem>
+			</cidade>
+			
+				
+			<cidade  id="13">
+			<cboavista>BOA VISTA</cboavista>
+			<linkboavista>http://www.joaoandrade.com.br/?p=471</linkboavista>
+			</cidade>
+			
+			<cidade  id="14">
+			<cmaraba>MARABÁ</cmaraba>
+			<linkmaraba>http://www.joaoandrade.com.br/?p=471</linkmaraba>
+			</cidade>
+			
+</brasil>

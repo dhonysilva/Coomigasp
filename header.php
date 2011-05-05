@@ -20,14 +20,14 @@
 	
 	<!-- jQuery -->
 	<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.4.2.min.js" type="text/javascript"></script>	
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.cycle.all.min.js" type="text/javascript"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.cycle.all.min.js" type="text/javascript"></script>	
+
 	<!-- Onde estão armazenaos os efeitos de slider -->
 	<script src="<?php bloginfo('template_directory'); ?>/js/jquery-fotos.js" type="text/javascript"></script>
 	
 	<?php wp_head(); ?>
 </head>
 <body>
-
 	<div class="container_12">                
 	
 		<div id="header">

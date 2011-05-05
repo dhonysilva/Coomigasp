@@ -31,7 +31,14 @@
 	</div><!-- .entry -->  
 
     </div><!-- #conteudo -->
-    <?php get_sidebar(); ?>
+    
+    
+    <?php if(in_category('5')) { 
+	get_sidebar("video"); 
+    } else {
+	    get_sidebar(); 
+    } ?>
+    
 </div><!-- #centro container_12 --> 	 
              
     

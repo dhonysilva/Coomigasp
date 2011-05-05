@@ -46,7 +46,8 @@ foreach ($xml->entry AS $video) {
 	<ul class="list-videos">
 	    <?php $count = 1; ?>
 	    <?php foreach ($videos AS $video) { ?>
-	    <li class="<?php if($count == 1) { echo "player-object"; }else{ echo "thumb"; }  ?>"><?php if($count == 1) { ?>
+	    <li class="<?php if($count == 1) { echo "player-object"; }else{ echo "thumb"; }  ?>">
+		<?php if($count == 1) { ?>
 		<?php echo $video['player'] ?>
 		    <h4 class="chamada-video"><a href="<?php echo $video['url'] ?>" title="<?php echo $video['titulo'] ?>"><?php echo $video['titulo'] ?></a></h4>
 		<?php } else { ?>

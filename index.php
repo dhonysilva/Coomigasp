@@ -2,45 +2,46 @@
 
     <div id="centro" class="container_12">
         <div id="conteudo" class="grid_8">
+	    <!-- Notícia em Destaque -->	
             <div class="entry">
 		<?php get_template_part('noticia-destaque'); ?>
             </div><!-- .entry -->
             
             <h5 class="topico stand">Notícias Anteriores</h5>
 	    
-	    <!-- Start loop do CTP fotos-->
-	    
-	    
-	    <?php $count = 1; ?>
-	    <?php $newsArgs = array( 'category_name=noticias', 'posts_per_page' => 4);                  
-				   
-		$GaleriasLoop = new WP_Query( $newsArgs );                  
-				   
-		while ( $GaleriasLoop->have_posts() ) : $GaleriasLoop->the_post(); ?>
+	    <!-- Start loop das Notícias Anteriores -->
 		<ul class="list-noticias">
+		<?php $count = 1; ?>
+		<?php $newsArgs = array( 'category_name=noticias', 'posts_per_page' => 4, 'offset' => 1);                  
+				       
+		$maisnews = new WP_Query( $newsArgs );                  
+				       
+		while ( $maisnews->have_posts() ) : $maisnews->the_post(); ?>
+		
 		<li class="grid_2 <?php if($count == 1) { echo "alpha simple-clear"; }else{ if($count == 4){ echo "omega"; $count = 0; } }  ?> ">
 		    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-		    <?php if ( has_post_thumbnail() ) {
-		    the_post_thumbnail('thumb_post');
-		    } else { ?>
-		    <img src="<?php bloginfo('template_directory'); ?>/images/thumb-default.jpg" alt="<?php the_title(); ?>" />
-		    <?php } ?>
+			<?php if ( has_post_thumbnail() ) {
+			the_post_thumbnail('thumb_post');
+			} else { ?>
+			<img src="<?php bloginfo('template_directory'); ?>/images/thumb-default.jpg" alt="<?php the_title(); ?>" />
+			<?php } ?>
 		    </a>
 		    <h4><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h4>
 		    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="mais">leia mais<span class="seta"> </span></a> 
 		</li>
-		</ul>
+		
 		<?php $count++; ?>
-	    <?php endwhile; ?>
-	    <?php wp_reset_query(); ?>
+		<?php endwhile; ?>
+		<?php wp_reset_query(); ?>
+		</ul>
 	    <div class="clear"></div>
 	   
-	<!-- End loop do CTP fotos -->
-	    
-	    <?php // get_template_part('loop'); ?>
+	    <!-- End loop das Notícias Anteriores -->
 	    
 	    <hr class="page post" />
-	    <h3 class="widget">Galerias</h3>
+	    
+	    <!-- Slide das Galerias de Fotos -->
+	    <h3 class="topicwidget">Galerias</h3>
 	    <div id="fotos" class="grid_5 alpha">
 		
 		<ul>

@@ -5,7 +5,9 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
     set_post_thumbnail_size( 150, 150, true ); // Normal post thumbnails
     add_image_size( 'thumb_slider', 960, 280, true ); // Thumbnails do Slider Superior a ser usado no CTP Slider
     add_image_size( 'thumb_post', 140, 100, true );
+    add_image_size( 'thumb_news', 70, 50, true ); // Thumbnails da Widget de Útimas Notícias
     add_image_size( 'thumb_fotos', 380, 250, true ); // Thumbnails de Chamada do Slider de Fotos
+    add_image_size( 'thumb_videos', 300, 130, true ); // Thumbnails do arquivo de Categoria de Vídeos category-videos.php
     add_image_size( 'thumb_fotodestaque', 200, 140, true ); // Thumbnails do álbum de fotos em Destaque
 }
 
@@ -25,14 +27,23 @@ $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
 return $excerpt;
 }
 
+// Register Sidebar
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+'name' => 'Lateral da HOME',
+'before_widget' => '<div class="sidebar-box">',
+'after_widget' => '</div>',
+'before_title' => '<h3 class="topicwidget">',
+'after_title' => '</h3>',
+));
 
 // Register Sidebar
 if ( function_exists('register_sidebar') )
 register_sidebar(array(
-'name' => 'Sidebar',
+'name' => 'Lateral do Canal de Videos',
 'before_widget' => '<div class="sidebar-box">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="widget">',
+'before_title' => '<h3 class="topicwidget">',
 'after_title' => '</h3>',
 ));
 
@@ -126,5 +137,11 @@ register_post_type('slider', $args_slider);
 
 
 // Read more: http: www.nerdhead.com.br/como-criar-um-cabecalho-com-imagens-randomicas-no-wordpress/
+
+
+//Widget Galeria de Vídeos
+include_once (TEMPLATEPATH."/gallery-videos.php");
+
+
 
 ?>
